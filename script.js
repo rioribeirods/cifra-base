@@ -13,13 +13,12 @@ let incremento = 1
 
 let selection = document.querySelector('#selection')
 let hiddenInput = document.querySelector('#hiddenInput')
-// Function pra pegar entrada do usuário
+// function pra pegar entrada do usuário
 selection.addEventListener("change", function(selection) {
     var selectionEscolhida = selection.target.value
 
         if(selectionEscolhida == 'base64') {
             hiddenInput.style.display = "none"
-            console.log("teste")
             button.setAttribute("onclick", "base64()")
         } else {
             hiddenInput.style.display = "inline"
@@ -30,7 +29,6 @@ selection.addEventListener("change", function(selection) {
 
 encode.addEventListener("click", function () {
     button.innerText = "Codificar";
-    console.log("encode teste")
 })
 
 decode.addEventListener("click", function () {
@@ -40,12 +38,10 @@ decode.addEventListener("click", function () {
 function base64(){
     let mensagem = textArea.value
     let choice = encode.selected
-    console.log('base64teste')
     result.value = base64Logic(mensagem, choice);
 }
 
 function base64Logic(mensagem, choice){
-    console.log('base64logicteste')
     return (choice)? btoa(mensagem) : atob(mensagem);
   }
 
