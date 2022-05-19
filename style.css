@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+}
+.none {
+    display: none;
+}
+.background {
+    background-color: black;
+    width: 40%;
+    height: 75vh;
+    border-radius: 20px;
+    margin-top: 5%;
+}
+.button {
+    margin: 1%;
+    font-size: 22px;
+}
+
+.buttons {
+    font-size: 18px;
+}
+textarea {
+    margin: 2%;
+}
+
+@media only screen and (max-width: 700px) {
+    .background {
+        width: 80%;
+        height: 80%;
+        margin-top: 10%;
+    }
+    textarea {
+        margin: 5%;
+    }
+}

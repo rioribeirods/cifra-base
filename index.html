@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <div class="background">
+    <form action="">
+        <h1>Codifique e decodifique sua mensagem!</h1>
+        
+        <h2>Escolha o método:</h2>
+        <select id="selection">
+            <option disabled selected>Escolha sua opção</option>
+            <option id="cifra" value="cifra">Cifra de César</option>
+            <option id="base" value="base64">Base 64</option>
+        </select>
+        <div>
+        <input type="number" placeholder="escolha sua chave" id="hiddenInput">
+        </div>
+        <h2>Escreva sua mensagem:</h2>
+        <textarea id="textArea" value="" cols="40" rows="10"></textarea>
+        <div class="buttons">
+            <input type="radio" id="encode" name="method" class="button">Codificar</input>
+            <input type="radio" id="decode" name="method" class="button">Decodificar</input>
+        </div>
+        <textarea id="result" cols="40" rows="10"></textarea>
+    </form>
+    <div>
+        <button id="button">Enviar</button>
+        </div>
+    </div>
+</body>
+</html>
