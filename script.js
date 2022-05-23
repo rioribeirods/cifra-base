@@ -1,5 +1,3 @@
-
-
 let decode = document.querySelector('#decode')
 let encode = document.querySelector('#encode')
 let result = document.querySelector('#result')
@@ -37,7 +35,7 @@ decode.addEventListener("click", function () {
 
 function base64(){
     let mensagem = textArea.value
-    let choice = encode.selected
+    let choice = encode.checked
     result.value = base64Logic(mensagem, choice);
 }
 
